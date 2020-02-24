@@ -309,13 +309,20 @@ textarea {
   /* contact-container form objects */
   input,
   textarea {
-    width: 100%;
-    margin-bottom: 5px;
+    width: 95%;
+    margin-bottom: 10px;
+  }
+
+  #submit-button {
+    /* /* margin-top: 15px; */
+    margin-left: 2.5%;
+    width: 95%;
+    margin: 15px auto 15px auto;
   }
 
   /* header for contacts */
   .contact-container h1 {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
 
   nav {
