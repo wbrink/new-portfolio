@@ -10,16 +10,23 @@ body {
   width: 100%;
   font-family: "Raleway";
   font-size: 16px;
-  /* background-color: black; */
+  scroll-behavior: smooth;
+  /* color: rgb(255, 255, 255); */
+
   /* display: flex; */
 }
 
+/**************** navbar *****************/
 header {
   /* flex-basis: 20%; */
   width: 15%;
   position: fixed;
   height: 100%;
   background-color: rgb(26, 199, 199);
+  background-color: #154a77;
+  background-color: rgb(67, 136, 196);
+  /* background-color: #2fdded; */
+  /* background-color: #1f1b24; */
   display: flex;
   flex-direction: column;
   /* flex-wrap: wrap; */
@@ -94,42 +101,95 @@ li {
   text-align: center;
   margin: 10px auto;
 }
+/**************** end navbar *****************/
 
 .background {
   padding: 1px;
   width: 100%;
-  /* background-color: rgb(233, 221, 221); */
-  padding-bottom: 20px;
+  padding-bottom: 30px;
   height: auto;
+}
+
+.background-grey {
+  background-color: rgba(236, 239, 241, 0.938);
+  /* background-color: #242222; */
+  /* background-color: rgba(61, 164, 233, 0.938); */
+}
+
+.background-grey2 {
+  background-color: rgba(180, 201, 218, 0.938);
+  /* background-color: #242222; */
+  /* background-color: rgba(61, 164, 233, 0.938); */
+}
+
+.splash {
+  margin-left: 15%;
+  width: 85%;
+  height: 60vh;
+  min-height: 300px;
+  background-image: url("../images/luca-bravo-XJXWbfSo2f0-unsplash.jpg");
+  background-size: cover;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(46, 42, 42, 0.93);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.splash-links {
   margin-top: 30px;
+  display: flex;
+}
+
+.splash-links a {
+  width: 60px;
+}
+
+.splash-icon:first-child {
+  margin-right: 20px;
+}
+
+.overlay .text {
+  text-align: center;
+  /* margin-top: 5%; */
+}
+
+.text h1 {
+  font-size: 5rem;
+}
+
+.text p {
+  font-size: 2rem;
 }
 
 .m-0 {
   margin: 0px;
 }
 
-.background-grey {
-  background-color: rgba(236, 239, 241, 0.938);
+.background-gradient2 {
+  background: linear-gradient(to bottom, rgb(67, 136, 196), #2193b0);
 }
 
-.background-gradient {
-  background: #2193b0; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom, #6dd5ed, #2193b0); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to bottom,
-    rgb(26, 199, 199),
-    #2193b0
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
+/* container that sits within background container */
 .container {
   margin-left: 20%;
-  margin-right: 15%;
-  /* margin-left: 20%; */
-
-  width: 65%;
+  margin-right: 5%;
+  width: 75%;
   padding-top: 60px;
-  /* margin-top: 30px; */
+}
+
+.smaller-container {
+  margin-left: 32.5%;
+  margin-right: 17.5%;
+  width: 50%;
+  padding-top: 60px;
+  text-align: center;
 }
 
 .about-me p {
@@ -150,19 +210,30 @@ li {
   margin-top: 40px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   /* justify-content: space-evenly; */
   /* background-color: lightpink; */
 }
 
 .button {
   padding: 10px 40px 10px 30px;
-  background-color: lightseagreen;
-  border-radius: 10px;
-  margin-right: 40px;
+  /* background-color: lightseagreen; */
+  /* background-color: #144361; */
+  /* background: linear-gradient(to right, #2467a1, #194e7c); */
+  background-color: #4388c4;
+  border-radius: 2px;
   color: white;
   display: flex;
   cursor: pointer;
-  margin-top: 0px;
+  margin-top: 10px;
+}
+
+.button:first-child {
+  margin-right: 40px;
+}
+
+.button:hover {
+  background: linear-gradient(to right, #2369a7, #2b7fc9);
 }
 
 .button img {
@@ -171,7 +242,8 @@ li {
 }
 
 h1 {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .card-container {
@@ -182,15 +254,53 @@ h1 {
 }
 
 .card {
-  box-shadow: -2px -2px 7px white, 2px 2px 10px rgba(175, 194, 214, 0.938);
-  height: 250px;
-  background-color: rgba(229, 234, 238, 0.938);
-  width: 250px;
-  margin-right: 20px;
+  height: 150px;
+  width: 150px;
+  margin-left: 10px;
+  margin-right: 10px;
   margin-top: 10px;
   margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.card-grey2 {
+  box-shadow: -5px -5px 10px rgba(216, 225, 233, 1), 3px 3px 10px rgb(122, 154, 182);
+  border-radius: 50%;
+  background-color: rgba(180, 201, 218, 0.938);
+}
+
+.card-grey {
+  box-shadow: -2px -2px 7px white, 2px 2px 10px rgba(175, 194, 214, 0.938);
+  background-color: rgba(229, 234, 238, 0.938);
+}
+
+.card-bigger {
+  height: 400px;
+  width: 500px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-bigger a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* .project-github {
+  position: absolute;
+  bottom: -40px;
+} */
+
+/* mail icon in contact section */
 .icon-holder {
   position: absolute;
   top: -4%;
@@ -201,25 +311,22 @@ h1 {
   border-radius: 100%;
   height: 80px;
   width: 80px;
-  background-color: white;
+  background-color: rgba(229, 234, 238);
   display: flex;
 }
 
+/* mail icon */
 .icon-holder img {
   margin: auto;
 }
 
 /* background with contact square in front of it offset */
 .contact-container {
-  /* background-color: white; */
-  margin-left: 22%;
-  margin-right: 13%;
-  /* margin-left: 20%; */
-
-  width: 65%;
-  /* padding-top: 60px; */
+  background-color: rgba(229, 234, 238);
+  margin-left: 20%;
+  margin-right: 5%;
+  width: 75%;
   height: auto;
-  background-color: white;
   margin-top: 60px;
   position: relative;
   padding: 70px 20px 20px 20px;
@@ -237,32 +344,27 @@ h1 {
 
 input,
 textarea {
+  border-radius: 5px;
+  border: none;
   width: 75%;
   margin-bottom: 20px;
   margin: 0 auto 20px auto;
   padding: 5px 10px;
   font-size: 1rem;
   font-family: "Raleway";
+  resize: none;
 }
 
 #submit-button {
   width: 200px;
-  margin-left: 12.5%;
+  margin: 15px auto 15px auto;
   border: none;
-  background: linear-gradient(
-    to right,
-    rgb(26, 199, 199),
-    #2193b0
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-color: #4388c4;
   color: white;
 }
 
 #submit-button:hover {
-  background: linear-gradient(
-    to right,
-    rgb(72, 185, 185),
-    #5eb8ce
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, #2369a7, #2b7fc9);
 }
 
 #submit-button:active {
@@ -273,12 +375,45 @@ textarea {
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+#splash-pic {
+  display: none;
+  width: 125px;
+}
+
 /* offset card ontop of contact-container */
 
 /* media query */
+/* cutoff to make the website single column no sidebar */
 @media (max-width: 1170px) {
-  html {
+  html,
+  body {
     font-size: 15px;
+  }
+
+  #splash-pic {
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+
+  #splash-name {
+    display: none;
+  }
+
+  .smaller-container {
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    padding-top: 40px;
+    text-align: center;
+  }
+
+  .buttons {
+    margin-top: 20px;
+  }
+
+  .splash {
+    margin-left: 0%;
+    width: 100%;
   }
 
   .social-icon {
@@ -289,6 +424,7 @@ textarea {
     position: static;
     width: 100%;
     height: auto;
+    /* height: 13vh; */
     padding: 5px;
   }
 
@@ -296,7 +432,7 @@ textarea {
     margin-left: 0;
     width: 90%;
     margin: auto;
-    padding-top: 30px;
+    padding-top: 20px;
   }
 
   .contact-container {
@@ -311,13 +447,6 @@ textarea {
   textarea {
     width: 95%;
     margin-bottom: 10px;
-  }
-
-  #submit-button {
-    /* /* margin-top: 15px; */
-    margin-left: 2.5%;
-    width: 95%;
-    margin: 15px auto 15px auto;
   }
 
   /* header for contacts */
@@ -345,13 +474,13 @@ textarea {
   }
 
   .card-container {
-    justify-content: left;
+    justify-content: space-evenly;
   }
 }
 
 @media (max-width: 640px) {
   .buttons {
-    justify-content: left;
+    justify-content: center;
   }
 
   .button {
@@ -364,8 +493,21 @@ textarea {
   }
 
   .card {
-    height: 150px;
-    width: 150px;
+    height: 100px;
+    width: 100px;
+  }
+
+  .card-bigger {
+    height: auto;
+    width: auto;
+  }
+
+  .text h1 {
+    font-size: 3.5rem;
+  }
+
+  .text p {
+    font-size: 1.5rem;
   }
 }
 
@@ -377,5 +519,18 @@ textarea {
 
   textarea {
     font-size: 0.9rem;
+  }
+}
+
+/* for iphone 4 size screens */
+@media (max-width: 346px) {
+  .button:first-child {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  #splash-pic {
+    display: inline-block;
+    margin-bottom: 10px;
   }
 }
