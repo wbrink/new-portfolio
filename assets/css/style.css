@@ -16,6 +16,10 @@ body {
   /* display: flex; */
 }
 
+a {
+  text-decoration: none;
+}
+
 /**************** navbar *****************/
 header {
   /* flex-basis: 20%; */
@@ -97,7 +101,7 @@ li {
 #fullscreen-nav-pic {
   border-radius: 100%;
   display: block;
-  width: 125px;
+  width: 130px;
   text-align: center;
   margin: 10px auto;
 }
@@ -127,14 +131,14 @@ li {
   width: 85%;
   height: 60vh;
   min-height: 300px;
-  background-image: url("../images/luca-bravo-XJXWbfSo2f0-unsplash.jpg");
+  background-image: url("../images/computer_background.jpg");
   background-size: cover;
 }
 
 .overlay {
   height: 100%;
   width: 100%;
-  background-color: rgba(46, 42, 42, 0.93);
+  background-color: rgba(46, 42, 42, 0.85);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -276,16 +280,22 @@ h1 {
   background-color: rgba(229, 234, 238, 0.938);
 }
 
+#portfolio-title {
+  margin-bottom: 45px;
+}
+
 .card-bigger {
-  height: 400px;
-  width: 500px;
+  height: 350px;
+  width: 450px;
   margin-left: 10px;
   margin-right: 10px;
   margin-top: 10px;
-  margin-bottom: 30px;
+  /* this is accomodate for title being top: -45px */
+  margin-bottom: 75px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
+  position: relative;
 }
 
 .card-bigger a {
@@ -295,10 +305,32 @@ h1 {
   position: relative;
 }
 
-/* .project-github {
+.project-github {
+  padding: 0px 10px;
   position: absolute;
-  bottom: -40px;
-} */
+  top: -20px;
+  left: 0px;
+  width: 100%;
+  height: 45px;
+  background-color: rgba(180, 201, 218);
+  background-color: #4388c4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  color: white;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.github-project-link {
+  height: 40px;
+}
+
+.portfolio-pic {
+  width: 90%;
+}
 
 /* mail icon in contact section */
 .icon-holder {
@@ -475,6 +507,10 @@ textarea {
 
   .card-container {
     justify-content: space-evenly;
+  }
+
+  .portfolio-pic {
+    width: 80%;
   }
 }
 
