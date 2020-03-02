@@ -281,6 +281,7 @@ svg:hover .svg-fill {
 h1 {
   margin-bottom: 20px;
   text-align: center;
+  font-family: "Ubuntu";
 }
 
 .card-container {
@@ -435,6 +436,7 @@ textarea {
   border: none;
   background-color: #4388c4;
   color: white;
+  font-family: "Ubuntu";
 }
 
 #submit-button:hover {
