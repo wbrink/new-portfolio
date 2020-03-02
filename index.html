@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display|Ubuntu&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css" />
     <title>Will Brink</title>
   </head>
@@ -17,7 +18,7 @@
       <nav>
         <ul>
           <li><a class="nav-link" id="about-nav-link" href="#about-section">About</a></li>
-          <li><a class="nav-link" id="portfolio-nav-Link" href="#portfolio-section">Portfolio</a></li>
+          <li><a class="nav-link" id="portfolio-nav-link" href="#portfolio-section">Portfolio</a></li>
           <!-- <li><a class="nav-link" href="#portfolio-section">Portfolio</a></li> -->
           <li><a class="nav-link" id="contact-nav-link" href="#contact-section">Contact</a></li>
         </ul>
@@ -26,7 +27,7 @@
         <div class="social-icon">
           <a href="https://github.com/wbrink" target="_blank">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
-              <g fill="white">
+              <g fill="white" class="svg-fill">
                 <path
                   fill-rule="evenodd"
                   clip-rule="evenodd"
@@ -44,7 +45,7 @@
           <a href="https://github.com/wbrink" target="_blank">
             <svg id="Linkedin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
               <!-- <title>LinkedIn</title> -->
-              <g fill="white">
+              <g fill="white" class="svg-fill">
                 <path
                   id="plain"
                   d="M116,3H12a8.91,8.91,0,0,0-9,8.8V116.22A8.91,8.91,0,0,0,12,125H116a8.93,8.93,0,0,0,9-8.81V11.77A8.93,8.93,0,0,0,116,3ZM39.17,107H21.06V48.73H39.17Zm-9-66.21a10.5,10.5,0,1,1,10.49-10.5A10.5,10.5,0,0,1,30.12,40.77ZM107,107H88.89V78.65c0-6.75-.12-15.44-9.41-15.44s-10.87,7.36-10.87,15V107H50.53V48.73H67.89v8h.24c2.42-4.58,8.32-9.41,17.13-9.41C103.6,47.28,107,59.35,107,75Z"
@@ -67,7 +68,7 @@
         <div class="splash-links">
           <a href="https://github.com/wbrink" target="_blank" class="splash-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
-              <g fill="#4388c4">
+              <g fill="rgb(161, 207, 245)" class="svg-fill">
                 <path
                   fill-rule="evenodd"
                   clip-rule="evenodd"
@@ -81,9 +82,9 @@
           </a>
 
           <a href="https://github.com/wbrink" target="_blank" class="splash-icon">
-            <svg id="Linkedin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
               <!-- <title>LinkedIn</title> -->
-              <g fill="#4388c4">
+              <g fill="rgb(161, 207, 245)" class="svg-fill">
                 <path
                   id="plain"
                   d="M116,3H12a8.91,8.91,0,0,0-9,8.8V116.22A8.91,8.91,0,0,0,12,125H116a8.93,8.93,0,0,0,9-8.81V11.77A8.93,8.93,0,0,0,116,3ZM39.17,107H21.06V48.73H39.17Zm-9-66.21a10.5,10.5,0,1,1,10.49-10.5A10.5,10.5,0,0,1,30.12,40.77ZM107,107H88.89V78.65c0-6.75-.12-15.44-9.41-15.44s-10.87,7.36-10.87,15V107H50.53V48.73H67.89v8h.24c2.42-4.58,8.32-9.41,17.13-9.41C103.6,47.28,107,59.35,107,75Z"
@@ -95,9 +96,11 @@
       </div>
     </div>
 
+
+    <!-- about me -->
     <div class="background background-grey" id="about-section">
       <div class="about-me smaller-container">
-        <img id="my-photo" src="assets/images/about_me.jpeg" alt="Photo of Will Brink" />
+        <!-- <img id="my-photo" src="assets/images/me_circle_smaller.png" alt="Photo of Will Brink" /> -->
         <h1>About Me</h1>
         <p>
           Hi there! My name is will and I am currently enrolled in a coding bootcamp for web development. I am excited
@@ -122,6 +125,8 @@
       </div>
     </div>
 
+
+    <!-- skills -->
     <div class="background background-grey2">
       <div class="container">
         <h1>Skills</h1>
@@ -142,83 +147,98 @@
       </div>
     </div>
 
+
+    <!-- portfolio -->
     <div class="background background-grey" id="portfolio-section">
       <div class="container">
         <h1 id="portfolio-title">Portfolio</h1>
         <div class="card-container">
+
+          <!-- my nasa app project -->
           <div class="card-bigger card-grey">
             <a href="https://wbrink.github.io/my-nasa-app/" target="_blank">
               <img src="assets/images/my-nasa-app.PNG" class="portfolio-pic" alt="iss tracker project image" />
-              <!-- <div class="project-github"><img src="assets/images/github-original.svg" width="100px" alt=""></div> -->
-              <!-- <div class="project-github"></div> -->
             </a>
             <div class="project-github">
               ISS Tracker
-              <a href="https://github.com/wbrink/my-nasa-app"
-                ><img src="assets/images/github-original-white.svg" class="github-project-link" alt="github icon"
-              /></a>
+              <abbr title="View On Github">
+                <a href="https://github.com/wbrink/my-nasa-app">
+                  <img src="assets/images/github-original-white.svg" class="github-project-link" alt="github icon"/>
+                </a>
+              </abbr>
             </div>
           </div>
+
+          <!-- password generator project -->
           <div class="card-bigger card-grey">
             <a href="https://wbrink.github.io/password-generator/" target="_blank">
-              <img
-                src="assets/images/password-generator.PNG"
-                class="portfolio-pic"
-                alt="password generator project image"
-              />
-              <!-- <div class="project-github"></div> -->
+              <img src="assets/images/password-generator.PNG" class="portfolio-pic" alt="password generator image"/>
             </a>
             <div class="project-github">
               Password Generator
-              <a href="https://github.com/wbrink/password-generator"
-                ><img src="assets/images/github-original-white.svg" class="github-project-link" alt="github icon"
-              /></a>
+              <abbr title="View On Github">
+                <a href="https://github.com/wbrink/password-generator">
+                  <img src="assets/images/github-original-white.svg" class="github-project-link" alt="github icon" />
+                </a>
+              </abbr>
             </div>
           </div>
+
+          <!-- weather dashboard project -->
           <div class="card-bigger card-grey">
             <a href="https://wbrink.github.io/weather-dashboard/" target="_blank">
               <img src="assets/images/weather-dashboard.PNG" class="portfolio-pic" alt="weather dashboard image" />
-              <!-- <div class="project-github"></div> -->
             </a>
             <div class="project-github">
               Weather Dashboard
-              <a href="https://github.com/wbrink/weather-dashboard"
-                ><img src="assets/images/github-original-white.svg" class="github-project-link" alt="github icon"
-              /></a>
+              <abbr title="View On Github">
+                <a href="https://github.com/wbrink/weather-dashboard">
+                  <img src="assets/images/github-original-white.svg" class="github-project-link" alt="github icon" />
+                </a>
+              </abbr>
             </div>
           </div>
+
+          <!-- code quiz project -->
           <div class="card-bigger card-grey">
             <a href="https://wbrink.github.io/code-quiz/" target="_blank">
               <img src="assets/images/code-quiz.PNG" class="portfolio-pic" alt="code quiz project image" />
-              <!-- <div class="project-github"></div> -->
             </a>
             <div class="project-github">
               Code Quiz
-              <a href="https://github.com/wbrink/code-quiz"
-                ><img src="assets/images/github-original-white.svg" class="github-project-link" alt="github icon"
-              /></a>
+              <abbr title="View On Github">
+                <a href="https://github.com/wbrink/code-quiz">
+                  <img src="assets/images/github-original-white.svg" class="github-project-link" alt="github icon"/>
+                </a>
+              </abbr>
             </div>
           </div>
+
+          <!-- day planner project -->
           <div class="card-bigger card-grey">
             <a href="https://wbrink.github.io/day-planner/" target="_blank">
               <img src="assets/images/day-planner.PNG" class="portfolio-pic" alt="day planner project image" />
-              <!-- <div class="project-github"></div> -->
             </a>
             <div class="project-github">
               Day Planner
-              <a href="https://github.com/wbrink/day-planner"
-                ><abbr title="View on Github"
-                  ><img
+              <abbr title="View On Github">
+                <a href="https://github.com/wbrink/day-planner">
+                  <img
                     src="assets/images/github-original-white.svg"
                     class="github-project-link"
-                    alt="github icon"/></abbr
-              ></a>
+                    alt="github icon"
+                  />
+                </a>
+              </abbr>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </div> 
+    <!-- end portfolio section -->
 
+
+    <!-- contact section -->
     <div class="background background-grey2" id="contact-section">
       <div class="contact-container">
         <div class="icon-holder"><img src="assets/images/envelope.svg" alt="" width="50px" id="mail-icon" /></div>
